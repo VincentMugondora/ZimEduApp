@@ -3,10 +3,11 @@ import {
     Alert,
     SafeAreaView,
     ScrollView,
+    StatusBar,
     StyleSheet,
     Text,
     TouchableOpacity,
-    View,
+    View
 } from 'react-native';
 
 export default function TutoringScreen() {
@@ -76,7 +77,7 @@ export default function TutoringScreen() {
     },
   ];
 
-  const handleBookSession = (tutor: any) => {
+  const handleBookSession = (tutor) => {
     Alert.alert(
       'Book Session',
       `Book a tutoring session with ${tutor.name}?`,
@@ -93,13 +94,14 @@ export default function TutoringScreen() {
 
   return (
     <SafeAreaView style={styles.container}>
+      <StatusBar barStyle="dark-content" backgroundColor="#f8fafc" />
+
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Online Tutoring</Text>
         <Text style={styles.headerSubtitle}>Get expert help when you need it</Text>
       </View>
 
       <ScrollView style={styles.content} contentContainerStyle={styles.scrollContent}>
-        {/* Quick Help Button */}
         <TouchableOpacity style={styles.quickHelpButton} onPress={handleQuickHelp}>
           <Text style={styles.quickHelpIcon}>⚡</Text>
           <View style={styles.quickHelpInfo}>
@@ -109,7 +111,6 @@ export default function TutoringScreen() {
           <Text style={styles.quickHelpArrow}>→</Text>
         </TouchableOpacity>
 
-        {/* Upcoming Sessions */}
         {upcomingSessions.length > 0 && (
           <View style={styles.section}>
             <Text style={styles.sectionTitle}>Upcoming Sessions</Text>
@@ -129,7 +130,6 @@ export default function TutoringScreen() {
           </View>
         )}
 
-        {/* Subject Selection */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Choose Subject</Text>
           <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.subjectsContainer}>
@@ -160,7 +160,6 @@ export default function TutoringScreen() {
           </ScrollView>
         </View>
 
-        {/* Available Tutors */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Available Tutors</Text>
           {tutors.map((tutor) => (
