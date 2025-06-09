@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "302111324764",
+    "project_id": "zim-learn-ai",
+    "storage_bucket": "zim-learn-ai.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302111324764:android:0e354bcf47b2d70273c499",
+        "android_client_info": {
+          "package_name": "com.vincent.zimeduapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0qDfqpYkuVqCDzJVG_4TmKd96RIy_JDE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
