@@ -13,7 +13,7 @@
     },
     "android": {
       "package": "com.vincent.zimeduapp",
-      "googleServicesFile": "./google-services.json",
+      "googleServicesFile": "./assets/google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
