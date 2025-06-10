@@ -13,7 +13,7 @@ export const addResource = functions.https.onRequest(async (req, res) => {
       url,
     });
     res.status(201).send(`Resource added with ID: ${resourceRef.id}`);
-  } catch (error) {
+  } catch (error: any) { // Add type assertion here
     res.status(400).send('Error adding resource: ' + error.message);
   }
 });
