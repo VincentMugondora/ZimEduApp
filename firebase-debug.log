@@ -1,0 +1,85 @@
+[debug] [2025-06-10T07:27:03.006Z] ----------------------------------------------------------------------
+[debug] [2025-06-10T07:27:03.015Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\DELL\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init functions
+[debug] [2025-06-10T07:27:03.017Z] CLI Version:   14.6.0
+[debug] [2025-06-10T07:27:03.017Z] Platform:      win32
+[debug] [2025-06-10T07:27:03.018Z] Node Version:  v22.16.0
+[debug] [2025-06-10T07:27:03.020Z] Time:          Tue Jun 10 2025 09:27:03 GMT+0200 (Central Africa Time)
+[debug] [2025-06-10T07:27:03.020Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-10T07:27:03.042Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-10T07:27:03.050Z] > authorizing via signed-in user (vincent@uncommon.org)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\DELL\Desktop\ZimEduApp
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-06-10T07:27:15.597Z] Checked if tokens are valid: true, expires at: 1749544007944
+[debug] [2025-06-10T07:27:15.598Z] Checked if tokens are valid: true, expires at: 1749544007944
+[debug] [2025-06-10T07:27:15.602Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-06-10T07:27:16.763Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-06-10T07:27:16.763Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project zimeduapp-36246 (ZImEduApp) 
+[info] 
+=== Functions Setup
+[debug] [2025-06-10T07:27:19.089Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-10T07:27:19.090Z] > authorizing via signed-in user (vincent@uncommon.org)
+[debug] [2025-06-10T07:27:19.090Z] [iam] checking project zimeduapp-36246 for permissions ["firebase.projects.get"]
+[debug] [2025-06-10T07:27:19.092Z] Checked if tokens are valid: true, expires at: 1749544007944
+[debug] [2025-06-10T07:27:19.093Z] Checked if tokens are valid: true, expires at: 1749544007944
+[debug] [2025-06-10T07:27:19.093Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/zimeduapp-36246:testIamPermissions [none]
+[debug] [2025-06-10T07:27:19.093Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/zimeduapp-36246:testIamPermissions x-goog-quota-user=projects/zimeduapp-36246
+[debug] [2025-06-10T07:27:19.094Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/zimeduapp-36246:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-10T07:27:21.045Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/zimeduapp-36246:testIamPermissions 200
+[debug] [2025-06-10T07:27:21.045Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/zimeduapp-36246:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-06-10T07:27:21.046Z] Checked if tokens are valid: true, expires at: 1749544007944
+[debug] [2025-06-10T07:27:21.046Z] Checked if tokens are valid: true, expires at: 1749544007944
+[debug] [2025-06-10T07:27:21.046Z] Checked if tokens are valid: true, expires at: 1749544007944
+[debug] [2025-06-10T07:27:21.047Z] Checked if tokens are valid: true, expires at: 1749544007944
+[debug] [2025-06-10T07:27:21.047Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/zimeduapp-36246/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-06-10T07:27:21.047Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/zimeduapp-36246/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/zimeduapp-36246
+[debug] [2025-06-10T07:27:21.050Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/zimeduapp-36246/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-06-10T07:27:21.050Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/zimeduapp-36246/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/zimeduapp-36246
+[debug] [2025-06-10T07:27:23.312Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/zimeduapp-36246/services/runtimeconfig.googleapis.com 200
+[debug] [2025-06-10T07:27:23.312Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/zimeduapp-36246/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-06-10T07:27:23.357Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/zimeduapp-36246/services/cloudfunctions.googleapis.com 200
+[debug] [2025-06-10T07:27:23.358Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/zimeduapp-36246/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2025-06-10T07:27:23.359Z] Checked if tokens are valid: true, expires at: 1749544007944
+[debug] [2025-06-10T07:27:23.359Z] Checked if tokens are valid: true, expires at: 1749544007944
+[debug] [2025-06-10T07:27:23.359Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/zimeduapp-36246/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2025-06-10T07:27:23.359Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/zimeduapp-36246/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/zimeduapp-36246
+[debug] [2025-06-10T07:27:24.145Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/zimeduapp-36246/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2025-06-10T07:27:24.145Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/zimeduapp-36246/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2025-06-10T07:27:34.161Z] Checked if tokens are valid: true, expires at: 1749544007944
+[debug] [2025-06-10T07:27:34.162Z] Checked if tokens are valid: true, expires at: 1749544007944
+[debug] [2025-06-10T07:27:34.162Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/zimeduapp-36246/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-06-10T07:27:34.162Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/zimeduapp-36246/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/zimeduapp-36246
+[debug] [2025-06-10T07:27:36.270Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/zimeduapp-36246/services/cloudfunctions.googleapis.com 200
+[debug] [2025-06-10T07:27:36.270Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/zimeduapp-36246/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/tsconfig.dev.json 
+[info] +  Wrote functions/tsconfig.json 
+[info] +  Wrote functions/src/index.ts 
+[info] +  Wrote functions/.gitignore 

@@ -8,7 +8,7 @@ import 'react-native-reanimated';
 import { useColorScheme } from '@/hooks/useColorScheme';
 import { AuthProvider, useAuth } from '../context/AuthContext';
 
-function RootLayoutNav() {
+function RootNavigation() {
   const { user } = useAuth();
   const segments = useSegments();
   const router = useRouter();
@@ -17,10 +17,8 @@ function RootLayoutNav() {
     const inAuthGroup = segments[0] === '(auth)';
 
     if (!user && !inAuthGroup) {
-      // Redirect to the login page
       router.replace('/(auth)/login');
     } else if (user && inAuthGroup) {
-      // Redirect to the main app
       router.replace('/(tabs)');
     }
   }, [user, segments]);
@@ -36,19 +34,20 @@ function RootLayoutNav() {
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
-  const [loaded] = useFonts({
+
+  const [fontsLoaded] = useFonts({
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
   });
 
-  if (!loaded) {
-    return null;
+  if (!fontsLoaded) {
+    return null; // Optionally show a loading spinner
   }
 
   return (
     <AuthProvider>
       <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-        <RootLayoutNav />
-        <StatusBar style="auto" />
+        <RootNavigation />
+        <StatusBar style={colorScheme === 'dark' ? 'light' : 'dark'} />
       </ThemeProvider>
     </AuthProvider>
   );

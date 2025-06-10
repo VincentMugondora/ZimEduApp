@@ -1,12 +1,12 @@
 import { useRouter } from 'expo-router';
 import React from 'react';
 import {
-  SafeAreaView,
-  ScrollView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
+    SafeAreaView,
+    ScrollView,
+    StyleSheet,
+    Text,
+    TouchableOpacity,
+    View,
 } from 'react-native';
 import { useAuth } from '../../context/AuthContext';
 
@@ -220,10 +220,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     borderRadius: 12,
     padding: 16,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
+    boxShadowColor: '#000',
+    boxShadowOffset: { width: 0, height: 2 },
+    boxShadowOpacity: 0.1,
+    boxShadowRadius: 4,
     elevation: 3,
   },
   continueInfo: {
@@ -264,10 +264,10 @@ const styles = StyleSheet.create({
     padding: 16,
     marginBottom: 16,
     borderLeftWidth: 4,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
+    boxShadowColor: '#000',
+    boxShadowOffset: { width: 0, height: 2 },
+    boxShadowOpacity: 0.1,
+    boxShadowRadius: 4,
     elevation: 3,
   },
   featureIcon: {
